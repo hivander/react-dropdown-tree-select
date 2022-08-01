@@ -37,7 +37,8 @@
     "test:cov": "yarn test && c8 --reporter=lcov report",
     "test:watch": "cross-env NODE_ENV=test ava --watch",
     "semantic-release": "semantic-release",
-    "contributors": "all-contributors add && all-contributors generate"
+    "contributors": "all-contributors add && all-contributors generate",
+    "prepare": "yarn build",
   },
   "files": [
     "dist"
