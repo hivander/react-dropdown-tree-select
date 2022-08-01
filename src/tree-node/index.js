@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types'
 import React, { PureComponent } from 'react'
 
-import { getDataset, isEmpty } from '../utils'
+import { getDataset } from '../utils'
 import Actions from './actions'
 import NodeLabel from './node-label'
 import Toggle from './toggle'
 
 import './index.css'
 
-const isLeaf = children => isEmpty(children)
+const isLeaf = children => children === undefined
 
 const getNodeCx = props => {
   const {
